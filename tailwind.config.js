@@ -14,7 +14,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 roboto: ["Roboto", "sans-serif"],
-                inter: ["Inter", "sans-serif"],
+                'dm-mono': ["DM Mono", "sans-serif"],
             },
         },
     },

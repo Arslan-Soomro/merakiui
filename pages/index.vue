@@ -1,55 +1,84 @@
 <template>
-    <header class="flex flex-col h-screen overflow-hidden bg-gray-900 pattern">
-        <header-component class="pattern"></header-component>
+    <div class="relative">
+        <header class="container px-6 py-8 mx-auto">
+            <nav class="flex items-center justify-between ">
+                <a href="/">
+                    <svg class="h-9" viewBox="0 0 474 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7393 76.3241L3.41309 86.6338C2.15269 87.8921 0 86.9995 0 85.2184V59.488C0 57.7067 2.15331 56.8141 3.41352 58.0731L13.7393 68.3887C14.262 68.9093 14.6767 69.5277 14.9597 70.2086C15.2427 70.8894 15.3883 71.6193 15.3883 72.3564C15.3883 73.0935 15.2427 73.8234 14.9597 74.5042C14.6767 75.1851 14.262 75.8035 13.7393 76.3241Z" fill="#3B82F6"/>
+                        <path d="M91.3683 76.3241L101.694 86.6337C102.955 87.8921 105.108 86.9995 105.108 85.2184V59.488C105.108 57.7067 102.954 56.8141 101.694 58.0731L91.3683 68.3887C90.8456 68.9093 90.4309 69.5277 90.1479 70.2086C89.8649 70.8894 89.7192 71.6193 89.7192 72.3564C89.7192 73.0935 89.8649 73.8234 90.1479 74.5042C90.4309 75.1851 90.8456 75.8035 91.3683 76.3241Z" fill="#3B82F6"/>
+                        <path d="M49.7091 54.6385L6.82642 11.8167C4.30574 9.29962 0 11.0849 0 14.6471V33.0139C0 34.076 0.422407 35.0945 1.1741 35.8449L44.8945 79.4874C46.9238 81.5064 49.6719 82.6402 52.5368 82.6402C55.4017 82.6402 58.1498 81.5064 60.1791 79.4874L103.932 35.8536C104.685 35.1031 105.108 34.084 105.108 33.0213V14.6545C105.108 11.0924 100.802 9.30703 98.2813 11.8238L55.3984 54.6385C54.6437 55.3912 53.6205 55.814 52.5538 55.814C51.487 55.814 50.4638 55.3912 49.7091 54.6385Z" fill="#3B82F6"/>
+                        <path d="M147.48 77.12C143.64 77.12 140.253 76.2667 137.32 74.56C134.387 72.8 132.093 70.3733 130.44 67.28C128.787 64.1867 127.96 60.5867 127.96 56.48C127.96 52.32 128.76 48.6667 130.36 45.52C132.013 42.3733 134.307 39.92 137.24 38.16C140.227 36.4 143.667 35.52 147.56 35.52C151.4 35.52 154.707 36.4 157.48 38.16C160.253 39.8667 162.387 42.16 163.88 45.04C165.427 47.92 166.2 51.0933 166.2 54.56C166.2 55.0933 166.2 55.68 166.2 56.32C166.2 56.9067 166.173 57.5733 166.12 58.32H136.28C136.547 62 137.747 64.8 139.88 66.72C142.013 68.5867 144.52 69.52 147.4 69.52C149.907 69.52 151.88 69.0133 153.32 68C154.813 66.9333 155.907 65.4933 156.6 63.68H165.16C164.2 67.4667 162.2 70.6667 159.16 73.28C156.12 75.84 152.227 77.12 147.48 77.12ZM147.48 42.88C144.867 42.88 142.547 43.68 140.52 45.28C138.493 46.8267 137.187 49.0133 136.6 51.84H157.72C157.507 49.1733 156.467 47.0133 154.6 45.36C152.733 43.7067 150.36 42.88 147.48 42.88Z" fill="#4B5563"/>
+                        <path d="M177.129 76.16V68.8H186.809V46.48C186.809 44.72 185.955 43.84 184.249 43.84H177.929V36.48H187.449C189.635 36.48 191.422 37.12 192.809 38.4C194.195 39.6267 194.889 41.36 194.889 43.6V44.56H195.289C195.875 41.5733 197.129 39.3333 199.049 37.84C201.022 36.2933 203.875 35.52 207.609 35.52H213.769V44.48H205.129C201.982 44.48 199.555 45.5733 197.849 47.76C196.142 49.9467 195.289 52.56 195.289 55.6V68.8H207.609V76.16H177.129Z" fill="#4B5563"/>
+                        <path d="M239.338 77.12C236.191 77.12 233.551 76.5867 231.418 75.52C229.284 74.4 227.684 72.9333 226.618 71.12C225.551 69.2533 225.018 67.2267 225.018 65.04C225.018 61.1467 226.431 58.1067 229.258 55.92C232.138 53.7333 236.191 52.64 241.418 52.64H251.658V51.76C251.658 45.7867 248.884 42.8 243.338 42.8C241.044 42.8 239.098 43.3067 237.498 44.32C235.951 45.28 234.911 46.8533 234.378 49.04H225.898C226.324 44.88 228.111 41.6 231.258 39.2C234.458 36.7467 238.484 35.52 243.338 35.52C249.204 35.52 253.471 36.96 256.138 39.84C258.804 42.72 260.138 46.6933 260.138 51.76V76.16H252.938L252.218 70.32H251.658C250.484 72.1867 249.018 73.7867 247.258 75.12C245.498 76.4533 242.858 77.12 239.338 77.12ZM240.938 70C244.404 70 246.991 68.96 248.698 66.88C250.458 64.7467 251.418 62.0533 251.578 58.8H242.298C239.258 58.8 237.098 59.3067 235.818 60.32C234.591 61.28 233.978 62.64 233.978 64.4C233.978 66.16 234.591 67.5467 235.818 68.56C237.098 69.52 238.804 70 240.938 70Z" fill="#4B5563"/>
+                        <path d="M274.746 76.16V18.56H283.226V53.12L298.426 36.48H309.066L292.506 54.08V54.72L311.226 76.16H300.906L283.226 55.76V76.16H274.746Z" fill="#4B5563"/>
+                        <path d="M338.075 30.4C336.208 30.4 334.635 29.8133 333.355 28.64C332.128 27.4133 331.515 25.92 331.515 24.16C331.515 22.4 332.128 20.9333 333.355 19.76C334.635 18.5867 336.208 18 338.075 18C339.995 18 341.568 18.5867 342.795 19.76C344.075 20.9333 344.715 22.4 344.715 24.16C344.715 25.92 344.075 27.4133 342.795 28.64C341.568 29.8133 339.995 30.4 338.075 30.4ZM322.155 76.16V68.8H334.635V46.48C334.635 44.72 333.782 43.84 332.075 43.84H323.275V36.48H333.595C336.902 36.48 339.302 37.2533 340.795 38.8C342.342 40.2933 343.115 42.6933 343.115 46V68.8H355.595V76.16H322.155Z" fill="#4B5563"/>
+                        <path d="M383.324 77.12C378.524 77.12 374.87 75.6533 372.364 72.72C369.91 69.7333 368.684 65.4133 368.684 59.76V36.48H377.164V58.72C377.164 61.9733 377.857 64.5333 379.244 66.4C380.684 68.2133 382.87 69.12 385.804 69.12C388.737 69.12 391.19 68.1333 393.164 66.16C395.137 64.1867 396.124 61.3333 396.124 57.6V36.48H404.604V76.16H397.244L396.524 70.24H396.124C395.057 72.16 393.404 73.7867 391.164 75.12C388.924 76.4533 386.31 77.12 383.324 77.12Z" fill="#4B5563"/>
+                        <path d="M434.012 30.4C432.146 30.4 430.572 29.8133 429.292 28.64C428.066 27.4133 427.452 25.92 427.452 24.16C427.452 22.4 428.066 20.9333 429.292 19.76C430.572 18.5867 432.146 18 434.012 18C435.932 18 437.506 18.5867 438.732 19.76C440.012 20.9333 440.653 22.4 440.653 24.16C440.653 25.92 440.012 27.4133 438.732 28.64C437.506 29.8133 435.932 30.4 434.012 30.4ZM418.093 76.16V68.8H430.572V46.48C430.572 44.72 429.719 43.84 428.012 43.84H419.213V36.48H429.533C432.839 36.48 435.239 37.2533 436.732 38.8C438.279 40.2933 439.053 42.6933 439.053 46V68.8H451.533V76.16H418.093Z" fill="#4B5563"/>
+                    </svg>
+                </a>
 
-        <div class="container flex items-center flex-1 px-6 py-8 mx-auto lg:py-0">
-            <div class="max-w-3xl mx-auto text-center text-white">
-                <h1 class="text-2xl font-medium leading-relaxed text-white capitalize lg:text-3xl"><a target="_blank" href="https://tailwindcss.com" class="font-normal underline decoration-blue-500">Tailwind CSS</a>
-                    components that support RTL languages & fully responsive based on Flexbox & CSS Grid with elegant
-                    <a target="_blank" href="https://tailwindcss.com/docs/dark-mode" class="font-normal underline decoration-blue-500">Dark Mode</a>.
-                </h1>
-
-                <div class="flex flex-wrap items-center justify-center mt-6 space-x-5">
-                    <a href="/components" class="flex text-white hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                        </svg>
-
-                        <p class="mx-2">{{ components_count }} Components</p>
+                <div class="flex items-center space-x-8">
+                    <a class="tracking-wide text-gray-500 capitalize hover:text-gray-600 hover:underline hover:decoration-blue-500" href="/components">components</a>
+                    <a class="tracking-wide text-gray-500 capitalize hover:text-gray-600 hover:underline hover:decoration-blue-500" href="/premium">premium</a>
+                    <a class="tracking-wide text-gray-500 capitalize hover:text-gray-600 hover:underline hover:decoration-blue-500" href="#">share on twitter</a>
+                    <a href="https://github.com/merakiui/merakiui" target="_blink" class="tracking-wide text-gray-500 capitalize hover:text-gray-600">
+                        <svg viewBox="0 0 30 30" class="w-5 h-5 fill-current sm:w-6 sm:h-6"><path d="M15 1.875C7.75195 1.875 1.875 7.9043 1.875 15.334C1.875 21.2812 5.63672 26.3203 10.8516 28.1016C10.9247 28.1175 10.9994 28.1253 11.0742 28.125C11.5605 28.125 11.748 27.7676 11.748 27.457C11.748 27.1348 11.7363 26.291 11.7305 25.166C11.2963 25.2678 10.8522 25.3209 10.4062 25.3242C7.88086 25.3242 7.30664 23.3613 7.30664 23.3613C6.70898 21.8086 5.84766 21.3926 5.84766 21.3926C4.70508 20.5898 5.8418 20.5664 5.92969 20.5664H5.93555C7.25391 20.6836 7.94531 21.9609 7.94531 21.9609C8.60156 23.1094 9.48047 23.4316 10.2656 23.4316C10.7848 23.4213 11.2959 23.3015 11.7656 23.0801C11.8828 22.2129 12.2227 21.6211 12.5977 21.2812C9.68555 20.9414 6.62109 19.7871 6.62109 14.6309C6.62109 13.1602 7.13086 11.959 7.96875 11.0215C7.83398 10.6816 7.38281 9.31055 8.09766 7.45898C8.19354 7.43604 8.29209 7.42619 8.39062 7.42969C8.86523 7.42969 9.9375 7.61133 11.707 8.8418C13.8572 8.24022 16.1311 8.24022 18.2812 8.8418C20.0508 7.61133 21.123 7.42969 21.5977 7.42969C21.6962 7.42619 21.7947 7.43604 21.8906 7.45898C22.6055 9.31055 22.1543 10.6816 22.0195 11.0215C22.8574 11.9648 23.3672 13.166 23.3672 14.6309C23.3672 19.7988 20.2969 20.9355 17.373 21.2695C17.8418 21.6855 18.2637 22.5059 18.2637 23.7598C18.2637 25.5586 18.2461 27.0117 18.2461 27.4512C18.2461 27.7676 18.4277 28.125 18.9141 28.125C18.9928 28.1253 19.0713 28.1175 19.1484 28.1016C24.3691 26.3203 28.125 21.2754 28.125 15.334C28.125 7.9043 22.248 1.875 15 1.875Z"></path></svg> 
                     </a>
-
-                    <a class="flex text-white hover:underline" target="_blank" href="https://github.com/merakiui/merakiui/blob/master/LICENSE">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                        </svg>
-
-                        <p class="mx-2">MIT Licensed</p>
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-1 gap-3 mt-8 text-center sm:flex sm:justify-center sm:gap-0 sm:space-x-4">
-                    <a href="/components" class="px-6 py-3 text-sm font-semibold text-gray-900 capitalize bg-white rounded-lg hover:bg-gray-300 hover:text-gray-700 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-gray-100"> Browse Components</a>
-                    <a href="https://twitter.com/meraki_ui" target="_blank" class="flex items-center justify-center px-6 py-3 space-x-2 text-sm font-semibold text-gray-300 bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-gray-600">
-                        <span>Follow us on Twitter </span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <a href="https://twitter.com/meraki_ui" target="_blink" class="tracking-wide text-gray-500 capitalize hover:text-gray-600">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6"><path d="M19.995 6.68799C20.8914 6.15208 21.5622 5.30823 21.882 4.31399C21.0397 4.81379 20.118 5.16587 19.157 5.35499C17.8246 3.94552 15.7135 3.60251 14.0034 4.51764C12.2933 5.43277 11.4075 7.37948 11.841 9.26999C8.39062 9.09676 5.17598 7.4669 2.99702 4.78599C1.85986 6.74741 2.44097 9.25477 4.32502 10.516C3.64373 10.4941 2.97754 10.3096 2.38202 9.97799C2.38202 9.99599 2.38202 10.014 2.38202 10.032C2.38241 12.0751 3.82239 13.8351 5.82502 14.24C5.19308 14.4119 4.53022 14.4372 3.88702 14.314C4.45022 16.0613 6.06057 17.2583 7.89602 17.294C6.37585 18.4871 4.49849 19.1342 2.56602 19.131C2.22349 19.1315 1.88123 19.1118 1.54102 19.072C3.50341 20.333 5.78739 21.0023 8.12002 21C11.3653 21.0223 14.484 19.7429 16.7787 17.448C19.0734 15.1531 20.3526 12.0342 20.33 8.78899C20.33 8.60299 20.3257 8.41799 20.317 8.23399C21.1575 7.62659 21.8828 6.87414 22.459 6.01199C21.676 6.35905 20.8455 6.58691 19.995 6.68799Z" fill="currentColor"></path></svg>
                     </a>
                 </div>
-            </div>
-        </div>
-    </header>
+            </nav>
+
+            <section class="flex items-center mt-24 font-dm-mono">
+                <div class="w-1/2 max-w-2xl">
+                    <h1 class="text-3xl font-medium leading-snug text-gray-600 sm:leading-snug md:leading-snug">
+                        Free <a href="https://tailwindcss.com" class="underline decoration-blue-500">Tailwind CSS</a> components that support RTL languages
+                    </h1>
+
+                    <p class="mt-4 text-gray-500">Start building your next project with an awesome components build with utilities & fully responsive based on Flexbox & CSS Grid with elegant Dark Mode.</p>
+
+                    <div class="mt-6 sm:-mx-2">
+                        <div class="inline-flex w-full sm:w-auto sm:mx-2">
+                            <a href="#" class="inline-flex items-center justify-center w-full px-5 py-2 text-sm tracking-wider text-white uppercase transition-colors duration-150 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                                components
+                            </a>
+                        </div>
+
+                        <div class="inline-flex w-full mt-4 sm:w-auto sm:mx-2 sm:mt-0">
+                            <a href="#" class="inline-flex items-center justify-center w-full px-5 py-2 text-sm tracking-wider text-gray-700 uppercase transition-colors duration-150 transform bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:text-white sm:w-auto dark:hover:bg-gray-800 dark:ring-gray-700 focus:ring focus:ring-gray-200 focus:ring-opacity-80">
+                                premium components
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-end w-1/2">
+                    <img class="max-w-md " src="https://play-tailwind.tailgrids.com/assets/images/about/about-image.svg" alt="">
+                </div>
+
+                <div class="absolute bottom-0 left-0 rotate-180">
+                    <svg width="88" height="306" viewBox="0 0 88 306" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M87.9911 65.4264L5.48853 147.929C1.58329 151.834 1.58329 158.166 5.48853 162.071L87.9911 244.574L87.9911 155L87.9911 65.4264Z" fill="#60A5FA"/>
+                        <path d="M87.9911 180.908L32.5159 236.383C28.6106 240.288 28.6106 246.62 32.5159 250.525L87.9911 306L87.9911 243.454L87.9911 180.908Z" fill="#93C5FD"/>
+                        <path d="M87.9911 4L32.5159 59.4752C28.6106 63.3804 28.6106 69.7121 32.5159 73.6173L87.9911 129.092L87.9911 66.5462L87.9911 4Z" fill="#3B82F6"/>
+                    </svg>
+                </div>
+
+                <div class="absolute top-0 right-0 ">
+                    <svg width="88" height="306" viewBox="0 0 88 306" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M87.9911 65.4264L5.48853 147.929C1.58329 151.834 1.58329 158.166 5.48853 162.071L87.9911 244.574L87.9911 155L87.9911 65.4264Z" fill="#60A5FA"/>
+                        <path d="M87.9911 180.908L32.5159 236.383C28.6106 240.288 28.6106 246.62 32.5159 250.525L87.9911 306L87.9911 243.454L87.9911 180.908Z" fill="#93C5FD"/>
+                        <path d="M87.9911 4L32.5159 59.4752C28.6106 63.3804 28.6106 69.7121 32.5159 73.6173L87.9911 129.092L87.9911 66.5462L87.9911 4Z" fill="#3B82F6"/>
+                    </svg>
+                </div>
+            </section>
+        </header>
+    </div>
 </template>
 
 <script>
-import HeaderComponent from "../components/Header.vue";
-
 export default {
-    components: {
-        HeaderComponent
-    },
-    
     data() {
         return {
             components_count: 108,

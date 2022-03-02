@@ -11,7 +11,7 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: "Meraki UI Tailwind CSS Components",
+        title: "Meraki UI Free Tailwind CSS Components",
         htmlAttrs: {
             lang: "en",
         },
@@ -31,19 +31,19 @@ export default {
                 hid: "description",
                 name: "description",
                 content:
-                    "Tailwind CSS components that support RTL languages & fully responsive based on Flexbox & CSS Grid with elegant Dark Mode.",
+                    "Free Tailwind CSS components that support RTL languages & fully responsive based on Flexbox & CSS Grid with elegant Dark Mode.",
             },
             { name: "twitter:card", content: "summary_large_image" },
             {
                 hid: "twitter:title",
                 name: "twitter:title",
-                content: "Meraki UI Tailwind CSS Components",
+                content: "Meraki UI Free Tailwind CSS Components",
             },
             {
                 hid: "twitter:description",
                 name: "twitter:description",
                 content:
-                    "Tailwind CSS components that support RTL languages & fully responsive based on Flexbox & CSS Grid with elegant Dark Mode.",
+                    "Free Tailwind CSS components that support RTL languages & fully responsive based on Flexbox & CSS Grid with elegant Dark Mode.",
             },
             {
                 hid: "twitter:image",
@@ -54,7 +54,7 @@ export default {
             {
                 hid: "og:title",
                 property: "og:title",
-                content: "Meraki UI Tailwind CSS Components",
+                content: "Meraki UI Free Tailwind CSS Components",
             },
             { property: "og:site_name", content: "Meraki UI" },
             { hid: "og:type", property: "og:type", content: "website" },
@@ -68,7 +68,7 @@ export default {
                 hid: "og:description",
                 property: "og:description",
                 content:
-                    "Tailwind CSS components that support RTL languages & fully responsive based on Flexbox & CSS Grid with elegant Dark Mode.",
+                    "Free Tailwind CSS components that support RTL languages & fully responsive based on Flexbox & CSS Grid with elegant Dark Mode.",
             },
         ],
         link: [
@@ -79,7 +79,7 @@ export default {
             },
             {
                 rel: "stylesheet",
-                href: "https://fonts.googleapis.com/css?family=Inter:300,400,500,700,900&display=swap",
+                href: "https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap",
             },
         ],
     },
