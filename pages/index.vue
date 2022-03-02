@@ -40,7 +40,7 @@
 
                     <div class="mt-6 sm:-mx-2">
                         <div class="inline-flex w-full sm:w-auto sm:mx-2">
-                            <a href="#" class="inline-flex items-center justify-center w-full px-5 py-2 text-sm tracking-wider text-white uppercase transition-colors duration-150 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                            <a href="/components" class="inline-flex items-center justify-center w-full px-5 py-2 text-sm tracking-wider text-white uppercase transition-colors duration-150 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
                                 components
                             </a>
                         </div>
